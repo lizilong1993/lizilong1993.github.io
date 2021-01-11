@@ -66,7 +66,7 @@
 <p>打开github，在头像下面点击<strong>settings</strong>，再点击<strong>SSH and GPG keys</strong>，新建一个SSH，名字随便，内容先空着等一下。<br><img src="https://raw.githubusercontent.com/lizilong1993/FigureBed/master/20210112001425.png"><br><img src="https://raw.githubusercontent.com/lizilong1993/FigureBed/master/20210112001546.png"><br><img src="https://raw.githubusercontent.com/lizilong1993/FigureBed/master/20210112001642.png"><br>git bash中输入</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 <p>将输出的内容复制到上图空着的框中，点击<strong>Add SSH Key</strong>保存。</p>
-<p>输入ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#x6d;</a>，如果如下图所示，出现你的用户名，那就成功了。<br><img src="https://raw.githubusercontent.com/lizilong1993/FigureBed/master/20210112001925.png"></p>
+<p>输入ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a>，如果如下图所示，出现你的用户名，那就成功了。<br><img src="https://raw.githubusercontent.com/lizilong1993/FigureBed/master/20210112001925.png"></p>
 <h2 id="部署博客到Github"><a href="#部署博客到Github" class="headerlink" title="部署博客到Github"></a>部署博客到Github</h2><p>打开博客根目录下的<em>config.yml</em>文件，这是<strong>博客</strong>的配置文件，在这里你可以修改与博客相关的各种信息。</p>
 <p>修改最后一行的配置：</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">https://github.com/lizilong1993/lizilong1993.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
@@ -75,7 +75,7 @@
 <p>然后输入<font color=red>hexo new post “你新建的文章名”</font>，新建一篇文章。</p>
 <p>然后打开<em>D:\Data\Blog\source_posts</em>的目录，可以发现下面多了一个.md文件，就是你的文章文件啦。</p>
 <p>编写完markdown文件后，根目录下输入<font color=red> hexo g</font>生成静态网页，然后输入<font color=red> hexo s –debug</font>可以本地预览效果，最后输入<font color=red> hexo d</font>上传到github上。这时打开你的github.io主页就能看到发布的文章啦。</p>
-<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p>这里我就不介绍怎么绑定域名了，因为我自己也没钱买域名&amp;#x1F62D。不过如果你有这个需求的话，可以参考<a href="https://godweiyang.com/2018/04/13/hexo-blog/">超详细Hexo+Github博客搭建小白教程</a>里的这部分。<br><img src="https://raw.githubusercontent.com/lizilong1993/FigureBed/master/20210112004125.png"></p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p>这里我就不介绍怎么绑定域名了，因为我自己也没钱买域名。不过如果你有这个需求的话，可以参考<a href="https://godweiyang.com/2018/04/13/hexo-blog/">超详细Hexo+Github博客搭建小白教程</a>里的这部分。<br><img src="https://raw.githubusercontent.com/lizilong1993/FigureBed/master/20210112004125.png"></p>
 <h1 id="备份与下载博客源文件"><a href="#备份与下载博客源文件" class="headerlink" title="备份与下载博客源文件"></a>备份与下载博客源文件</h1><p>这里可以继续参考<a href="https://godweiyang.com/2018/04/13/hexo-blog/">超详细Hexo+Github博客搭建小白教程</a>里的这部分，我太懒了，没有弄这一部分2333。<br><img src="https://raw.githubusercontent.com/lizilong1993/FigureBed/master/20210112004417.png"></p>
 <h1 id="美化博客"><a href="#美化博客" class="headerlink" title="美化博客"></a>美化博客</h1><p>原生的Hexo默认主题是<strong>landscape</strong>,我个人不太喜欢。</p>
 <h2 id="Hexo主题推荐"><a href="#Hexo主题推荐" class="headerlink" title="Hexo主题推荐"></a>Hexo主题推荐</h2><p>可以参考这几篇文章里介绍的主题：</p>
